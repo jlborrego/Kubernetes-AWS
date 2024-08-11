@@ -1,6 +1,6 @@
 # Kubernetes-AWS Deployment
 
-This repository contains the setup and deployment scripts for a Node.js application and MongoDB database on a Kubernetes cluster, utilizing AWS services. This project was done individually due to the absence of most team members, except for Alejandro Romagosa. Each team member decided to submit their work separately to enhance their learning experience with Kubernetes.
+This repository contains the setup and deployment scripts for a Node.js application and MongoDB database on a Kubernetes cluster, utilizing AWS services. 
 
 ## Overview
 
