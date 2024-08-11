@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs
+  namespace: nodejs-unir
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nodejs
+  template:
+    metadata:
+        labels:
+          app: nodejs
+    spec:
+      containers:
+      - name: nodejs
+        image: juanlubh/node-dockercompose:1.0.0
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodejs-lb
+  namespace: nodejs-unir
+spec:
+  type: LoadBalancer
+  selector:
+    app: nodejs
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
