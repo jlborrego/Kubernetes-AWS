@@ -37,7 +37,7 @@ The mongodb.yml file defines the deployment of a MongoDB database in the nodejs-
 - Uses the Docker image mongo.
 - Exposes port 27017.
 - Configures a volume mounted from the host directory /data/mongodb.
-- 
+  
 ## Service
 - Name: mongo
 - Namespace: nodejs-unir
